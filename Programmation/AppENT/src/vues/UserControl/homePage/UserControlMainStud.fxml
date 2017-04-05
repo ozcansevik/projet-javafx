@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<fx:root type="GridPane" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" >
+
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+
+    <Label fx:id="dateLabel" alignment="CENTER" contentDisplay="CENTER" text="Emploi du temps d'aujourd'hui:" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" GridPane.vgrow="ALWAYS">
+        <padding>
+           <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+        </padding>
+    </Label>
+
+    <ListView fx:id="listViewTodaySession" GridPane.columnIndex="0" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+        <GridPane.margin>
+           <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+        </GridPane.margin>
+    </ListView>
+
+    <Label fx:id="markLabel" alignment="CENTER" contentDisplay="CENTER" text="Dernières notes:" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" GridPane.vgrow="ALWAYS">
+        <padding>
+           <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+        </padding>
+    </Label>
+    <ListView fx:id="listViewLastMark" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+        <GridPane.margin>
+           <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+        </GridPane.margin>
+    </ListView>
+    <opaqueInsets>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </opaqueInsets>
+
+
+</fx:root>
